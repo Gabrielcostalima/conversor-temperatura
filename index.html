@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperaturas</title>
+    <style>
+        body{font: 20pt arial;}
+        button{font-size: 20pt; padding: 25px;}
+    </style>
+</head>
+<body>
+    <h1>Conversor de Temperaturas</h1>
+    <button onclick="clicar()">Converter</button>
+    <div id="'res">
+        <br>
+        Clique no botão acima para iniciar.
+    </div>
+    <div id="ress"></div>
+    <script>
+        function clicar() {
+            let tem = window.prompt('Digite uma temperatura em ºC (Ceelsius)')
+            let Ceelsius = (tem * 9/5) +32
+            ress.innerHTML = `A temperatura de ${tem}°C, corresponde a... ${Ceelsius}°F`
+
+        }
+    </script>
+</body>
+</html>
